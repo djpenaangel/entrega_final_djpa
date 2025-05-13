@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/LenovoB470/Documents/U/Mlops/Entrega Final/mlruns/0/37408ed9997940cc881d8b5ebaec11bd/artifacts
+end_time: 1747104986284
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 37408ed9997940cc881d8b5ebaec11bd
+run_name: rogue-snail-244
+run_uuid: 37408ed9997940cc881d8b5ebaec11bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747104967823
+status: 3
+tags: []
+user_id: LenovoB470

@@ -3,7 +3,7 @@ name: ML Pipeline CI/CD
 on:
   push:
     branches:
-      - master # Asegúrate de que esta sea la rama correcta en tu repositorio
+      - master  # Asegúrate de que esta sea la rama correcta en tu repositorio
   pull_request:
     branches:
       - master  # Asegúrate de que esta sea la rama correcta en tu repositorio
@@ -35,8 +35,11 @@ jobs:
     - name: Train model
       run: make train  # Ejecuta el comando `make train` para entrenar el modelo
 
+    - name: List mlruns directory  # Verifica que el modelo esté en la carpeta mlruns/
+      run: ls -R mlruns/
+
     - name: Upload MLflow model as artifact
-      uses: actions/upload-artifact@v2  # Usamos esta acción para subir el modelo entrenado
+      uses: actions/upload-artifact@v1  # Cambié a la versión v1 de la acción
       with:
-        name: model  
-        path: mlruns/  
+        name: model
+        path: mlruns/
