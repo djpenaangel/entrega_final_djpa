@@ -1,5 +1,12 @@
-"mlruns/" 
-"bezdekIris.data"
-"Entrega Final.ipynb"
-"Index"
-"iris.data"
+# Ignorar directorios y archivos de MLflow
+mlruns/
+
+# Ignorar el archivo de datos de Iris
+bezdekIris.data
+iris.data
+
+# Ignorar otros archivos específicos (ajustado a lo que has mencionado)
+Entrega_Final.ipynb
+Index
+
+
