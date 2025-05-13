@@ -3,43 +3,40 @@ name: ML Pipeline CI/CD
 on:
   push:
     branches:
-      - master  # Asegúrate de que esta sea la rama correcta en tu repositorio
+      - master
   pull_request:
     branches:
-      - master  # Asegúrate de que esta sea la rama correcta en tu repositorio
+      - master
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Ejecutará el flujo de trabajo en un entorno Ubuntu
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2  # Clona el repositorio para tener acceso al código
+      uses: actions/checkout@v2
 
     - name: Set up Python
-      uses: actions/setup-python@v2  # Configura la versión de Python
+      uses: actions/setup-python@v2
       with:
-        python-version: '3.8'  # Versión de Python que deseas usar
+        python-version: '3.8'
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip  # Actualiza pip
-        pip install -r requirements.txt  # Instala las dependencias de tu archivo requirements.txt
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
 
     - name: Run Makefile install
-      run: make install  # Ejecuta el comando `make install` para instalar dependencias adicionales si las hay
+      run: make install
 
     - name: Run tests
-      run: make test  # Ejecuta el comando `make test` para realizar pruebas (asegúrate de tener este paso configurado)
+      run: make test
 
     - name: Train model
-      run: make train  # Ejecuta el comando `make train` para entrenar el modelo
-
-    - name: List mlruns directory  # Verifica que el modelo esté en la carpeta mlruns/
-      run: ls -R mlruns/
+      run: make train
 
     - name: Upload MLflow model as artifact
-      uses: actions/upload-artifact@v1  # Cambié a la versión v1 de la acción
+      uses: actions/upload-artifact@v2  # Usamos la versión v2 de esta acción
       with:
         name: model
         path: mlruns/
