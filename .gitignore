@@ -4,9 +4,11 @@ mlruns/
 # Ignorar el archivo de datos de Iris
 bezdekIris.data
 iris.data
+iris.names
 
 # Ignorar otros archivos específicos (ajustado a lo que has mencionado)
 Entrega_Final.ipynb
 Index
+.ipynb_checkpoints
 
 
