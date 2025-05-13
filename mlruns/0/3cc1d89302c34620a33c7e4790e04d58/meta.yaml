@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/LenovoB470/Documents/U/Mlops/Entrega Final/mlruns/0/3cc1d89302c34620a33c7e4790e04d58/artifacts
+end_time: 1747029935193
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3cc1d89302c34620a33c7e4790e04d58
+run_name: brawny-goose-267
+run_uuid: 3cc1d89302c34620a33c7e4790e04d58
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747029919968
+status: 3
+tags: []
+user_id: LenovoB470

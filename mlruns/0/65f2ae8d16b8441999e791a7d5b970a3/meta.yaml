@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/LenovoB470/Documents/U/Mlops/Entrega Final/mlruns/0/65f2ae8d16b8441999e791a7d5b970a3/artifacts
+end_time: 1747030004343
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 65f2ae8d16b8441999e791a7d5b970a3
+run_name: suave-fawn-418
+run_uuid: 65f2ae8d16b8441999e791a7d5b970a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747029986616
+status: 3
+tags: []
+user_id: LenovoB470
