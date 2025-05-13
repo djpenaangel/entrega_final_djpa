@@ -3,10 +3,10 @@ name: ML Pipeline CI/CD
 on:
   push:
     branches:
-      - main  # Asegúrate de que esta sea la rama correcta en tu repositorio
+      - master # Asegúrate de que esta sea la rama correcta en tu repositorio
   pull_request:
     branches:
-      - main  # Asegúrate de que esta sea la rama correcta en tu repositorio
+      - master  # Asegúrate de que esta sea la rama correcta en tu repositorio
 
 jobs:
   build:
