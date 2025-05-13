@@ -4,7 +4,6 @@
 install:
     pip install -r requirements.txt
 
-
 # Ejecutar el pipeline completo (entrenar el modelo)
 train:
     python src/train.py
